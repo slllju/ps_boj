@@ -1,4 +1,5 @@
 // https://www.acmicpc.net/problem/10000
+// I solved this problem on May 15, 2020.
 
 #include<cstdio>
 #include<algorithm>
