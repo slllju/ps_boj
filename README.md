@@ -1,3 +1,3 @@
 # ps_boj
-Problem Solving @ BOJ (acmicpc.net)
+Problem Solving @ BOJ
 https://www.acmicpc.net/user/bone
