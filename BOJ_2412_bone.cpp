@@ -9,7 +9,7 @@ using namespace std;
 
 int main(){
 
-    // 1. 좌표 입력 받고 x좌표 기준 오름차순 완료.
+    // 1. 입력 받은 좌표들을 x좌표 기준으로 오름차순 정렬
     int n, ey;
     scanf("%d%d",&n,&ey);
     vector<pair<int,int>> a;
@@ -21,7 +21,7 @@ int main(){
     sort(a.begin(),a.end());
 
 
-    // 2. BFS를 위한 간선을 형성해본다
+    // 2. 이분탐색을 이용한, BFS를 위한 간선 형성
     vector<int> ed[n+1];
     for( int i=0; i<=n; i++ ){
         for( int x=max(0,a[i].fir-2); x<=a[i].fir+2; x++ ){
@@ -53,7 +53,7 @@ int main(){
         }
     }
 
-    // 3. BFS를 하여 ey까지 올라가는 최소횟수를 구한다
+    // 3. BFS : 도착 y좌표까지 이동하는 최소횟수 출력
     int ans=-1;
     queue<pair<int,int>> q;
     q.push({0,0});
